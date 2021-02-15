@@ -1,0 +1,260 @@
+<html>
+
+    <head>
+
+        <style type="text/css">
+        
+            #myform {
+                
+                background-color: white;
+                border: 2px solid gold;
+                float: left;
+                
+            }  
+            
+            p {
+                
+                border: 2px solid white;
+                padding: 4px;
+                
+            }
+        
+            
+        </style>
+        
+        <title>Javascript</title>
+        
+        
+           
+    </head>
+
+
+
+    <body>
+        
+     
+            
+        <div id="myform">
+            
+            <h1>Lottery Number Generator</h1>
+            
+            <p> First winning number! </p>
+  
+            <div id="outputA"> </div>
+            
+              
+            <p> Second winning number! </p>
+  
+            <div id="outputB"> </div>
+            
+            
+            <p> Third winning number! </p>
+  
+            <div id="outputC"> </div>
+            
+            
+            <p> Fourth winning number! </p>
+  
+            <div id="outputD"> </div>
+            
+            
+            <p> Fifth winning number! </p>
+            
+            <div id="outputE"> </div>
+            
+           
+            <p> Winning PowerBall number! </p>
+  
+            <div id="outputPB"> </div>
+            
+             <button id="myMasterButton" onclick="generateOne(); generateTwo(); generateThree(); generateFour(); generateFive(); generatePB()" onmousedown="sound.play()">Generate Winning Numbers!</button>
+            
+            <div id="outputMaster"> </div>
+        
+        </div>
+        
+    <script type="text/javascript">
+            
+          function generateOne () {
+            
+              var a = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+            
+              var r=[];
+              
+              for (n=1; n<=2; ++n);
+     
+              let randOne = Math.floor((Math.random() * (16-n)) +1 );
+              
+              r.push(a[randOne]);
+                
+              a[randOne] = a[16-n];
+     
+              document.getElementById("outputA").innerHTML = randOne;
+   }
+            
+           function randNum (min, max) {
+                
+               min = Math.ceil(min);
+               
+               max = Math.floor(max);
+            
+               return Math.floor(Math.random() * (max - min + 1));
+
+
+
+}
+        
+
+
+            function generateTwo () {
+            
+              var b = [15,16,17,18,19,20,21,22,23,24,25,26,27,28];
+            
+              var s=[];
+              
+              for (n=15; n<=16; ++n);
+     
+              let randTwo = Math.floor((Math.random() * (31-n)) +15 );
+              
+              s.push(b[randTwo]);
+                
+              b[randTwo] = b[31-n];
+     
+              document.getElementById("outputB").innerHTML = randTwo;
+   }
+            
+           function randNumTwo (min, max) {
+                
+               min = Math.ceil(min);
+               
+               max = Math.floor(max);
+            
+               return Math.floor(Math.random() * (max - min + 1));
+
+
+
+}
+
+      function generateThree () {
+            
+              var c = [29,30,31,32,33,34,35,36,37,38,39,40,41,42];
+            
+              var t=[];
+              
+              for (n=29; n<=30; ++n);
+     
+              let randThree = Math.floor((Math.random() * (45-n)) +29 );
+              
+              t.push(c[randThree]);
+                
+              c[randThree] = c[45-n];
+     
+              document.getElementById("outputC").innerHTML = randThree;
+   }
+            
+           function randNumThree (min, max) {
+                
+               min = Math.ceil(min);
+               
+               max = Math.floor(max);
+            
+               return Math.floor(Math.random() * (max - min + 1));
+
+
+
+}
+    
+           function generateFour () {
+            
+              var d = [43,44,45,46,47,48,49,50,51,52,53,54,55,56];
+            
+              var u=[];
+              
+              for (n=43; n<=44; ++n);
+     
+              let randFour = Math.floor((Math.random() * (59-n)) +43 );
+              
+              u.push(d[randFour]);
+                
+              d[randFour] = d[56-n];
+     
+              document.getElementById("outputD").innerHTML = randFour;
+   }
+            
+           function randNumFour (min, max) {
+                
+               min = Math.ceil(min);
+               
+               max = Math.floor(max);
+            
+               return Math.floor(Math.random() * (max - min + 1));
+
+
+
+}
+        
+          function generateFive () {
+            
+              var e = [57,58,59,60,61,62,63,64,65,66,67,68,69];
+            
+              var v=[];
+              
+              for (n=57; n<=58; ++n);
+     
+              let randFive = Math.floor((Math.random() * (72-n)) +57 );
+              
+              v.push(e[randFive]);
+                
+              e[randFive] = e[72-n];
+     
+              document.getElementById("outputE").innerHTML = randFive;
+   }
+            
+           function randNumFive (min, max) {
+                
+               min = Math.ceil(min);
+               
+               max = Math.floor(max);
+            
+               return Math.floor(Math.random() * (max - min + 1));
+
+
+
+}
+        
+                function generatePB () {
+            
+              var f = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
+            
+              var w=[];
+              
+              for (n=1; n<=2; ++n);
+     
+              let randPB = Math.floor((Math.random() * (29-n)) +1 );
+              
+              w.push(f[randPB]);
+                
+              f[randPB] = f[29-n];
+     
+              document.getElementById("outputPB").innerHTML = randPB;
+   }
+            
+           function randNumPB (min, max) {
+                
+               min = Math.ceil(min);
+               
+               max = Math.floor(max);
+            
+               return Math.floor(Math.random() * (max - min + 1));
+
+
+
+}
+        
+            
+    </script>
+        
+        
+    </body> 
+    
+</html>
